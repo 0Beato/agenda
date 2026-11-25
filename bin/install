@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+ROOT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+"$ROOT/bin/build"
+cd "$ROOT/pkgbuild"
+makepkg -fsi "$@"
+
+# The package ships the minutely reminder check as a systemd user timer;
+# turn it on for whoever installed it. The window does the same on launch.
+systemctl --user daemon-reload
+systemctl --user enable --now agenda-reminders.timer

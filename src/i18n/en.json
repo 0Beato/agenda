@@ -1,0 +1,38 @@
+{
+  "%n d": {
+    "one": "%n day",
+    "other": "%n days"
+  },
+  "%n days before": {
+    "one": "%n day before",
+    "other": "%n days before"
+  },
+  "%n h": {
+    "one": "%n h",
+    "other": "%n h"
+  },
+  "%n hours before": {
+    "one": "%n hour before",
+    "other": "%n hours before"
+  },
+  "%n min": {
+    "one": "%n min",
+    "other": "%n min"
+  },
+  "%n minutes before": {
+    "one": "%n minute before",
+    "other": "%n minutes before"
+  },
+  "%n weeks before": {
+    "one": "%n week before",
+    "other": "%n weeks before"
+  },
+  "%n wk": {
+    "one": "%n week",
+    "other": "%n weeks"
+  },
+  "Today at %1, in %n minutes": {
+    "one": "Today at %1, in %n minute",
+    "other": "Today at %1, in %n minutes"
+  }
+}

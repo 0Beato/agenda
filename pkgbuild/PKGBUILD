@@ -1,0 +1,26 @@
+pkgname=agenda
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='Appointments and meetings on a calendar, with reminders as desktop notifications'
+arch=('x86_64' 'aarch64')
+license=('MIT')
+depends=('qt6-base' 'qt6-declarative' 'qt6-wayland' 'libnotify' 'systemd')
+makedepends=('gcc' 'make')
+options=('!debug')
+source=()
+sha256sums=()
+
+build() {
+  cd "$startdir/.."
+  ./bin/build
+}
+
+package() {
+  cd "$startdir/.."
+  install -Dm755 build/agenda "$pkgdir/usr/bin/agenda"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 "$startdir/agenda.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/agenda.svg"
+  install -Dm644 "$startdir/agenda.desktop" "$pkgdir/usr/share/applications/agenda.desktop"
+  install -Dm644 "$startdir/agenda-reminders.service" "$pkgdir/usr/lib/systemd/user/agenda-reminders.service"
+  install -Dm644 "$startdir/agenda-reminders.timer" "$pkgdir/usr/lib/systemd/user/agenda-reminders.timer"
+}

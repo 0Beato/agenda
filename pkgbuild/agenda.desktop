@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Agenda
+Comment=Appointments and meetings, with reminders
+Comment[pt_BR]=Compromissos e reuniões, com lembretes
+Comment[pt]=Compromissos e reuniões, com lembretes
+Comment[es]=Citas y reuniones, con recordatorios
+Keywords=calendar;appointment;meeting;reminder;calendário;compromisso;reunião;lembrete;
+Keywords[pt_BR]=calendário;compromisso;reunião;lembrete;agenda;
+Exec=agenda open
+Icon=agenda
+Terminal=false
+Categories=Office;Calendar;Utility;
+StartupWMClass=agenda

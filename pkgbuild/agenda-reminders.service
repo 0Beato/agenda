@@ -1,0 +1,6 @@
+[Unit]
+Description=Agenda reminders
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/agenda remind

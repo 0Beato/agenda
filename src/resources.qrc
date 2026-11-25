@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="Main.qml">Main.qml</file>
+        <file alias="CalendarMonth.qml">CalendarMonth.qml</file>
+        <file alias="UpcomingList.qml">UpcomingList.qml</file>
+        <file alias="DayAgenda.qml">DayAgenda.qml</file>
+        <file alias="EventEditor.qml">EventEditor.qml</file>
+        <file alias="ChoiceButton.qml">ChoiceButton.qml</file>
+        <file alias="Toast.qml">Toast.qml</file>
+        <file alias="HelpOverlay.qml">HelpOverlay.qml</file>
+        <file alias="i18n/en.json">i18n/en.json</file>
+        <file alias="i18n/pt.json">i18n/pt.json</file>
+        <file alias="i18n/pt-BR.json">i18n/pt-BR.json</file>
+        <file alias="i18n/es.json">i18n/es.json</file>
+    </qresource>
+</RCC>
